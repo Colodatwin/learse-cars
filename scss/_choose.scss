@@ -1,0 +1,128 @@
+.choose {
+  // .choose__title
+  &__title {
+  }
+  // .choose__tabs
+  &__tabs {
+  }
+
+  &__link {
+    width: 225px;
+    display: block;
+    text-align: center;
+  }
+}
+.tabs {
+  margin-bottom: 70px;
+  // .tabs__btn
+  &__btn {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 100px;
+  }
+  // .tabs__btn-item
+  &__btn-item {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: transparent;
+    &_active {
+      color: #0066ff;
+    }
+  }
+  // .tabs__content
+  &__content {
+  }
+  // .tabs__content-item
+  &__content-item {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px 40px;
+    &.tabs__content-item_active {
+      display: grid;
+    }
+  }
+  // .tabs__card
+  &__card {
+  }
+  @media (max-width: 1180px) {
+    &__content-item {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 1040px) {
+    &__btn {
+      padding: 0;
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+  }
+  @media (max-width: 860px) {
+    &__content-item {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 40px;
+    }
+  }
+  @media (max-width: 650px) {
+    margin-bottom: 40px;
+    &__content-item {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+    &__btn-item {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 540px) {
+    &__btn {
+      flex-direction: column;
+    }
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #06f;
+  // .card__img
+  &__img {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #06f;
+    img {
+      width: 100%;
+    }
+  }
+  // .card__content
+  &__content {
+    padding: 0 5px;
+    border-bottom: 1px solid #06f;
+    flex: 1 1 auto;
+  }
+  // .card__title
+  &__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  // .card__text
+  &__text {
+    margin-bottom: 20px;
+  }
+  // .card__price
+  &__price {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  // .card__link
+  &__link {
+    color: #0066ff;
+  }
+}
+.blog {
+  // .blog__link
+  &__link {
+  }
+}

@@ -1,0 +1,32 @@
+.video {
+  // .video__title
+  &__title {
+    margin-bottom: 20px;
+  }
+  // .video__text
+  &__text {
+    margin-bottom: 50px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+  }
+  &__content {
+    display: block;
+    margin: 0 auto;
+  }
+  @media (max-width: 1040px) {
+    &__content {
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      &__content {
+        height: 400px;
+      }
+    }
+    @media (max-width: 540px) {
+      &__content {
+        height: 200px;
+      }
+    }
+  }
+}

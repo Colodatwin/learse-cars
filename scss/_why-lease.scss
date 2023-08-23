@@ -1,0 +1,52 @@
+.why-lease {
+  // .why-lease__title
+  &__title {
+  }
+  // .why-lease__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+  }
+  // .why-lease__item
+  &__item {
+  }
+  // .why-lease__item-img
+  &__item-img {
+    margin-bottom: 30px;
+  }
+
+  // .why-lease__item-title
+  &__item-title {
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  // .why-lease__item-text
+  &__item-text {
+    text-align: left;
+  }
+  @media (max-width: 920px) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  @media (max-width: 540px) {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item-img {
+      margin-bottom: 10px;
+    }
+    &__item-title{
+      margin-bottom: 10px;
+    }
+    &__item-text {
+      text-align: center;
+    }
+
+  }
+}
